@@ -1,3 +1,4 @@
 .env
 .env.demo-secret
 node_modules
+.vercel
