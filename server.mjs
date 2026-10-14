@@ -228,7 +228,7 @@ async function handler(req, res) {
       200,
       "Your discount",
       session.verified
-        ? `<p>Verified student — 20% off applied. (Subject <code>${escapeHtml(String(session.sub).slice(0, 12))}…</code>, pairwise for this demo.)</p><p><a href="/logout">Log out</a></p>`
+        ? `<p>Verified student — 20% off applied.</p><p><a href="/logout">Log out</a></p>`
         : `<p>No active credential — discount not applied. Verify on StudentProof, then <a href="/">sign in again</a>.</p><p><a href="/logout">Log out</a></p>`
     );
   }
