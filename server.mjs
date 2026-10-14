@@ -271,6 +271,9 @@ export const handler = async (req, res) => {
   }
 };
 
+// Default export for Vercel Serverless Functions (expects export default).
+export { handler as default };
+
 // Local dev: start a real HTTP server. On Vercel the function is exported.
 const isVercel = process.env.VERCEL === "1" || Boolean(process.env.VERCEL_REGION);
 if (!isVercel) {
