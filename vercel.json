@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "api/index.mjs": {
+      "runtime": "nodejs20.x",
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/index" }]
+}
